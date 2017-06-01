@@ -31,7 +31,7 @@ body {
 
 
 .container {
-    max-width: 960px;
+    max-width: 980px;
     margin-top: 0;
     margin-left: auto;
     margin-right: auto;
@@ -44,6 +44,8 @@ body {
  //   padding-right: 40px;
     box-sizing: border-box;
 }
+
+
 
 header {
     padding-left: 0;
@@ -227,4 +229,66 @@ footer {
 
 .group {
     zoom: 1;
+}
+
+@media screen and (max-width: 1024px) {
+    header h1 {
+        font-size: 500%;
+    }
+    header p {
+        letter-spacing: 3px;
+        word-spacing: 5px;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    .main-area,
+    .sidebar {
+        width: auto;
+        float: none;
+    }
+    .sidebar {
+        margin-right: 40px;
+    }
+
+    header h1 {
+        font-size: 450%;
+        letter-spacing: 2px;
+        word-spacing: 4px;
+    }
+    header p {
+        letter-spacing: 1px;
+        word-spacing: 3px;
+
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .hide-small {
+        display: none;
+    }
+
+    .container {
+        padding-left: 20px;
+ //       padding-right: 10px;
+
+    }
+    header h1 {
+        font-size: 250%;
+        letter-spacing: 2px;
+        word-spacing: 4px;
+        text-align: center;
+        margin-left: 0px;
+    }
+
+    header p {
+        letter-spacing: 1px;
+        word-spacing: 3px;
+
+    }
+
+    .sidebar {
+        padding: 20px;
+    }
 }
