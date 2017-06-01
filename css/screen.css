@@ -14,34 +14,24 @@
 /* End Custom fonts */
 
 html {
-//    background-color: #869960;
     background-color: #ececec;
     line-height: 1.7;
 }
 
 body {
-//font-family: Tahoma, sans-serif;
-//    font-family: Georgia, "Times New Roman", serif;
     font-family: "PTSans"; Arial, sans-serif;
     font-size: 15px;
     margin-top: 0;
-//    padding-top: 0;
 }
-
-
 
 .container {
     max-width: 980px;
     margin-top: 0;
     margin-left: auto;
     margin-right: auto;
-//    background: url(../images/color-tile1.png) left bottom repeat-x, #fff url(../images/color-tile1.png) left top repeat-x;
     background-color: #fff;
-   // background-image: url(../images/color-tile.png);
-   // background-repeat: repeat-x;
     padding-top: 0px;
     padding-left: 40px;
- //   padding-right: 40px;
     box-sizing: border-box;
 }
 
@@ -51,13 +41,11 @@ header {
     padding-left: 0;
     margin-left: -40px;
     padding-top: 70px;
-//    color: #617140;
     color: white;
     background-image: url(../images/artem-sapegin-176819.jpg);
     border-bottom: 3px solid #e5e9dc;
     background-position: right bottom;
     background-repeat: no-repeat;
-
 }
 
 header h1 {
@@ -102,7 +90,7 @@ header p {
     padding: 5px 20px;
     border: 3px solid #e5e9dc;
     border-bottom: none;
-  //  background-color: #fff;
+    background: rgba(255,255,255, .60);
 }
 
 .site-nav a:hover {
@@ -111,10 +99,16 @@ header p {
 /* End Site Navigation */
 
 .content-area {
- //   border-top: 3px solid #e5e9dc;
- //   border-bottom: 3px solid #e5e9dc;
+
 }
 
+a {
+    color: #617140;
+}
+
+a:hover {
+    font-weight: bold;
+}
 /* main area */
 
 .main-area {
@@ -154,20 +148,17 @@ header p {
     text-indent: 25px;
 }
 
-a {
-    text-decoration: none;
-}
 
 /* slika background */
 .slika {
     background: #c2bbb1 url(../images/galymzhan-abdugalimov-181.jpg) center center no-repeat; // vsi spodaj komentirani v eni vrsti
    // background-color: #c2bbb1;
-   // background-image: url(../images/bird.jpg);
+   // background-image: url(../images/galymzhan-abdugalimov-181.jpg);
    // background-position: center center;
    // background-repeat: no-repeat;
     background-size: cover;
     text-align: center;
-    padding: 100px 0;
+    padding: 200px 0;
     width: 100%;
     height: auto;
 }
@@ -178,14 +169,12 @@ a {
     color: #fff;
     text-shadow: 1px 1px 0 #000;
     position: relative;
-    top: 100px;
+    padding: 10px 0;
+    top: 200px;
 
 }
 
-
-/* end Birds background */
-
-
+/* end slika background */
 
 /* sidebar */
 
@@ -197,9 +186,6 @@ a {
     box-sizing: border-box;
     font-size: 90%;
 }
-
-
-
 
 footer {
     text-align: center;
@@ -231,6 +217,10 @@ footer {
     zoom: 1;
 }
 
+/* @media queries */
+/* screen do 1024 px */
+
+
 @media screen and (max-width: 1024px) {
     header h1 {
         font-size: 500%;
@@ -241,6 +231,7 @@ footer {
     }
 }
 
+/* screen do 768 px */
 
 @media screen and (max-width: 768px) {
     .main-area,
@@ -260,9 +251,25 @@ footer {
     header p {
         letter-spacing: 1px;
         word-spacing: 3px;
-
     }
+    .site-nav li {
+        width: 47%;
+     margin-right: 0px;
+     margin-left:  0px;
+     background: rgba(0,0,0, .55);
+    }
+
+    .site-nav a {
+        color: white;
+        border: 1px solid white;
+    }
+    .site-nav a:hover {
+        color: #617140;
+    }
+
 }
+
+/* screen do 480 px */
 
 @media screen and (max-width: 480px) {
     .hide-small {
@@ -290,5 +297,14 @@ footer {
 
     .sidebar {
         padding: 20px;
+    }
+
+    .site-nav {
+    margin-left: 0px;
+    margin-top: 60px;
+}
+
+    .site-nav li {
+        width: 100%;
     }
 }
