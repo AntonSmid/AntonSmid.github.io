@@ -220,6 +220,16 @@ footer {
 /* @media queries */
 /* screen do 1024 px */
 
+@media screen and (min-width: 1300px) {
+
+    body {
+        font-size: 18px;
+    }
+    .container {
+        max-width: 1200px;
+    }
+}
+
 
 @media screen and (max-width: 1024px) {
     header h1 {
